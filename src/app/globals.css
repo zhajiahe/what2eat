@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-background: #ffffff;
+  --color-foreground: #1a1a1a;
+  --color-primary: #2563eb;
+  --color-primary-light: #dbeafe;
+  --color-muted: #6b7280;
+  --color-border: #e5e7eb;
+  --color-card: #f9fafb;
+  --color-danger: #ef4444;
+  --color-success: #22c55e;
+}
+
+body {
+  background: var(--color-background);
+  color: var(--color-foreground);
+  -webkit-tap-highlight-color: transparent;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* safe area for mobile bottom nav */
+.pb-safe {
+  padding-bottom: max(4.5rem, env(safe-area-inset-bottom, 0px) + 4.5rem);
+}
